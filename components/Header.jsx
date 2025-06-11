@@ -16,11 +16,15 @@ const navItems = [
     id: "3",
     title: "About",
     href: "/about",
+    query: {
+      contactInfo: "enabled",
+    },
   },
   {
     id: "4",
     title: "Contact",
     href: "/contact",
+    replace: true,
   },
   {
     id: "5",
@@ -43,7 +47,10 @@ export default function Header() {
             {navItems.map((item) => (
               <li key={item.id} className={styles.li}>
                 <Link
-                  href={item?.href}
+                  href={{
+                    pathname: item?.href,
+                    query: item?.query,
+                  }}
                   className={styles.link}
                   title={`Go to ${item?.title} page`}
                 >
