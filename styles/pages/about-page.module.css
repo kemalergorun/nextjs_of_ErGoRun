@@ -1,0 +1,13 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.h1{
+    text-align: center;
+    color: red;
+    margin: 20px 10px;
+}

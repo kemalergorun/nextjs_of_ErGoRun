@@ -1,0 +1,35 @@
+.sidebarContainer{
+    background-color: rgb(66, 0, 94);
+    min-height: 100vh;
+}
+
+.ul{
+    list-style-type: none;
+}
+
+.link{
+    display: inline-block;
+    padding: 10px 20px;
+    width: 180px;
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.link:hover{
+    transition: .3s all;
+    background-color: pink;
+    color: black;
+}
+
+.active{
+    background-color: greenyellow;
+    color: midnightblue;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
