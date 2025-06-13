@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import styles from "@/styles/components/header.module.css";
+import { usePathname } from "next/navigation";
 
 const navItems = [
   {
@@ -32,6 +35,11 @@ const navItems = [
     href: "/dashboard",
   },
   {
+    id: "7",
+    title: "CS",
+    href: "/client-side",
+  },
+  {
     id: "6",
     title: "Login",
     href: "/login",
@@ -39,6 +47,9 @@ const navItems = [
 ];
 
 export default function Header() {
+  const pathName = usePathname();
+  console.log(pathName);
+
   return (
     <div>
       <header>
@@ -51,7 +62,15 @@ export default function Header() {
                     pathname: item?.href,
                     query: item?.query,
                   }}
-                  className={styles.link}
+                  className={`${styles.link} ${
+                    item?.href === "/"
+                      ? pathName === "/"
+                        ? styles.active
+                        : ""
+                      : pathName.startsWith(item?.href)
+                      ? styles.active
+                      : ""
+                  }`}
                   title={`Go to ${item?.title} page`}
                 >
                   {item?.title}

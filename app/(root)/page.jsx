@@ -16,3 +16,17 @@ export default function HomePage() {
     </div>
   );
 }
+
+/*
+Folder structure itself is a router for NextJs
+
+Dynamic					      Catch All				Optional Catch All
+ []						      	[...]						[[...]]
+/1						      	/1						  /1
+/1/2 - (Only 1 Lvl)		/1/2 +					/1/2 +
+
+						          products				products
+							        	page.jsx				[[...productId]]
+							        	[...productId]				page.jsx
+								        	page.jsx
+*/

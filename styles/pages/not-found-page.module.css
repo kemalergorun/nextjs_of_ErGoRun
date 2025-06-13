@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background-color: teal;
+}
+
+.number{
+    position: absolute;
+    font-size: 50vw;
+    color: rgba(245, 245, 245, .3);
+    z-index: 2;
+    user-select: none;
+}
+
+.text{
+    z-index: 3;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
