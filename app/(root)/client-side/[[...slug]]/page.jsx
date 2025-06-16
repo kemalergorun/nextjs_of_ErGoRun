@@ -1,8 +1,13 @@
 "use client";
+import ChildOfClientSide from "@/components/ChildOfClientSide";
+// Gives error:
+// import "server-only"
 
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 
 export default function ClientSidePage() {
+  console.log("ClientSidePage is rendered/re-rendered");
+
   const router = useRouter();
   const searchParams = useSearchParams();
   const params = useParams();
@@ -39,6 +44,8 @@ export default function ClientSidePage() {
       <p>use client is added on the top of the file</p>
       <p>{JSON.stringify(params)}</p>
       <button onClick={handleClick}>Go to Login Page</button>
+
+      <ChildOfClientSide />
     </div>
   );
 }

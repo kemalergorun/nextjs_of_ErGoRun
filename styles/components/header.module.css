@@ -3,6 +3,8 @@
     list-style-type: none;
     align-items: center;
     background-color: brown;
+    /* We need to define the font family inside of a variable, as we have assigned a var name for it: */
+    font-family: var(--font-dancing-script), var(--font-geist-mono);
 }
 
 .li{
@@ -30,11 +32,6 @@
     background-color: crimson;
     color: cyan;
 }
-
-
-
-
-
 
 
 

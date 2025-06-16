@@ -2,6 +2,12 @@ import LongContent from "@/components/LongContent";
 import styles from "@/styles/page.module.css";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Home | Learning Next",
+  description:
+    "This is the about page where you can be navigated to different routes.",
+};
+
 export default function HomePage() {
   return (
     <div className={styles.page}>

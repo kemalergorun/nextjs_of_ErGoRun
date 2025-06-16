@@ -1,6 +1,9 @@
+// To make a page static use following code:
+export const dynamic = "force-static";
+// export const revalidate = false
+
 export default async function CatchAllRoutes(props) {
   const slug = (await props.params).slug;
-  console.log(slug);
 
   return (
     <div>

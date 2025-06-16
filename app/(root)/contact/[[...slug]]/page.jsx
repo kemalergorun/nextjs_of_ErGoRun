@@ -1,9 +1,14 @@
 import styles from "@/styles/pages/contact-page.module.css";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Contact | Learning Next",
+  description:
+    "This is the about page where you can be navigated to different routes.",
+};
+
 export default async function ContactPage({ params }) {
   const slug = (await params).slug;
-  console.log(slug);
 
   return (
     <main className={styles.main}>

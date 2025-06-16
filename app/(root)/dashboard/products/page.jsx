@@ -2,6 +2,8 @@ import styles from "@/styles/pages/dashboard-product-page.module.css";
 import Link from "next/link";
 
 export default function DashboardProductsPage() {
+  console.log("DashboardProductsPage is rendered/re-rendered");
+
   return (
     <div>
       <h1 className={styles.h1}>Dashboard Product Page</h1>
