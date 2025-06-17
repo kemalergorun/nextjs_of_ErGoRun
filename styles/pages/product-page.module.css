@@ -1,0 +1,38 @@
+.h1{
+    text-align: center;
+    color: crimson;
+    margin-top: 1rem;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.productList{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
